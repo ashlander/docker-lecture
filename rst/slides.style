@@ -1,0 +1,66 @@
+{"pageSetup": {
+    "width": "16cm",
+    "height": "9cm",
+    "margin-top": "0cm",
+    "margin-bottom": "0cm",
+    "margin-left": "0cm",
+    "margin-right": "0cm",
+    "margin-gutter": "0cm",
+    "spacing-header": "1mm",
+    "spacing-footer": "1mm",
+    "firstTemplate": "cutePage"
+},
+"pageTemplates" : {
+    "cutePage": {
+        "frames": [
+            ["0%", "0%", "100%", "100%"]
+            ],
+        "showHeader" : false,
+        "showFooter" : false,
+        "background" : "images/water_bg.jpg"
+    }
+},
+"styles": [
+    ["bodytext", {"fontSize": 14}],
+    ["badtext", {
+        "parent": "bodytext",
+        "textColor": red
+    }],
+    ["goodtext", {
+        "parent": "bodytext",
+        "textColor": green
+    }],
+    ["warntext", {
+        "parent": "bodytext",
+        "textColor": orange
+    }],
+    ["containertext", {
+        "parent": "bodytext",
+        "textColor": blue
+    }],
+    ["badbold", {
+        "parent": "badtext",
+        "fontName": stdBold
+    }],
+    ["goodbold", {
+        "parent": "goodtext",
+        "fontName": stdBold
+    }],
+    ["warnbold", {
+        "parent": "warntext",
+        "fontName": stdBold
+    }],
+    ["containerbold", {
+        "parent": "containertext",
+        "fontName": stdBold
+    }],
+    ["header-table", {
+        "parent" : "table",
+        "spaceBefore": 0,
+        "commands": [
+            [ "GRID", [ 0, -1 ], [ -1, -1 ], 0.25, "transparent" ],
+            [ "LINEBELOW", [ 0, -1 ], [ -1, -1 ], 0.25, "transparent" ]
+        ]
+    }]
+    ]
+}

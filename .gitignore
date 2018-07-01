@@ -1,0 +1,5 @@
+# https://github.com/github/gitignore
+# Vim
+*.sw[a-z]
+*~
+
